@@ -3,7 +3,7 @@ import socket, os, time, multiprocessing
 proto = "https"
 git_server = "github.com/Eternali/synk.git"
 usernm = "Eternali"
-passwd = b""
+passwd = ""
 
 
 def setup():
@@ -17,7 +17,7 @@ def upload_changes():
 
 def get_changes():
     os.system("git pull origin master")
-    os.system(" ")
+    os.system("te ")
 
 
 while True:
