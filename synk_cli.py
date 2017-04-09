@@ -1,9 +1,11 @@
+#!/usr/bin/python3
+
 import socket, os, time, multiprocessing
 
 proto = "https"
 git_server = "github.com/Eternali/synk.git"
 usernm = "Eternali"
-passwd = ""
+passwd = "ArduDroid98"
 
 
 def setup():
@@ -17,10 +19,11 @@ def upload_changes():
 
 def get_changes():
     os.system("git pull origin master")
-    os.system("te ")
 
 
 while True:
-    os.system("git add -f . && git commit -am 'autocommit'")
+    upload_changes()
+    get_changes()
+    time.sleep(0.5)
 
 
