@@ -3,7 +3,7 @@ import socket, os, time, multiprocessing
 proto = "https"
 git_server = "github.com/Eternali/synk.git"
 usernm = "Eternali"
-passwd = b""
+passwd = ""
 
 
 def setup():
