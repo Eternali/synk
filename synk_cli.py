@@ -17,7 +17,6 @@ def upload_changes():
 
 def get_changes():
     os.system("git pull origin master")
-    print(test)
 
 
 
