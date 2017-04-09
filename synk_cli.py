@@ -14,7 +14,7 @@ def setup():
 def upload_changes():
     os.system("git add -f . && git commit -am 'autocommit' && git push origin master")
 
-
+dfadf
 def get_changes():
     os.system("git pull origin master")
     os.system(" ")
