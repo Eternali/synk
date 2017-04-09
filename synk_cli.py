@@ -17,7 +17,7 @@ def upload_changes():
 dfadf
 def get_changes():
     os.system("git pull origin master")
-    os.system(" ")
+    os.system("te ")
 
 
 while True:
