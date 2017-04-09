@@ -19,7 +19,6 @@ def get_changes():
     os.system("git pull origin master")
 
 
-
 while True:
     os.system("git add -f . && git commit -am 'autocommit'")
 
