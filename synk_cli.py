@@ -17,7 +17,7 @@ def upload_changes():
 
 def get_changes():
     os.system("git pull origin master")
-    os.system()
+    os.system("")
 
 
 while True:
