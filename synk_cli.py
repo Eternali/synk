@@ -1,18 +1,18 @@
-import socket, os, time, multiprocessing, pexpect
+import socket, os, time, multiprocessing
 
-git_server = "https://github.com/Eternali/synk.git"
+proto = "https"
+git_server = "github.com/Eternali/synk.git"
 usernm = "Eternali"
 passwd = ""
 
 
+def setup():
+    os.system("git remote remove origin")
+    os.system("git remote add origin " + proto + "://%s:%s@%s" % (usernm, passwd, git_server))
+
+
 def upload_changes():
-    os.system("git add -f . && git commit -am 'autocommit'")
-    child = pexpect.spawn("git push origin master")
-    child.expect(["Username for 'https://github.com':"])
-    child.sendline(usernm)
-    child.expect(["Password for 'https://%s@github.com':" % usernm])
-    child.sendline(passwd)
-    child.close()
+    os.system("git add -f . && git commit -am 'autocommit' && git push origin master")
 
 
 def get_changes():
