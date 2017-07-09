@@ -1,0 +1,2 @@
+let a = 10
+should f = 1
